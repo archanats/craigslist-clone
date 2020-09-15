@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import 'reset';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  // background: purple;
+  background-image: linear-gradient(135deg, rgba(73,155,234,0.7) 0%, rgba(172,88,240,0.7) 100%),
+  url('../images/nyc.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  color: white;
+
+  .fas {
+    margin-left: 10px;
+  }
+  .left-menu{
+    display: flex;
+
+    .logo{
+      font-size: 2rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .city {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+    }
+  }
+
+  .right-menu{
+    display: flex;
+
+    .user-image{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .account-dropdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    .post-btn{
+      padding: 15px 20px;
+      font-weight: 300;
+      text-transform: capitalize;
+      background:rgb(16, 122, 175);
+      color:white
+    }
+  }
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .Aligner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Aligner-item {
+    max-width: 50%;
+  }
+
+  .menu {
+    ul {
+      li {
+        padding: 10px 15px;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .version-num {
+    background: #e8e8e8;
+    border-radius: 4px;
+    padding: 7px 15px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 0 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #30395c;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #43d4d6;
+    }
+  }
+}
