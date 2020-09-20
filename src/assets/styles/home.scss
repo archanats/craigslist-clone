@@ -1,0 +1,84 @@
+.home {
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    padding: 100px 0;
+    font-weight: 700;
+  }
+
+  .links {
+    background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-bottom: 70px;
+
+    .categories {
+      .title {
+        font-size: 1.3rem;
+        color: white;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      .link-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .link {
+          font-size: 0.8rem;
+          font-weight: 300;
+          margin-bottom: 0.5rem;
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .trending {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .search {
+      width: 100%;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .title {
+      font-size: 1rem;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    .trending-tags {
+      text-align: center;
+      .tag {
+        padding: 10px 20px;
+        border-radius: 45px;
+        border: 1px solid white;
+        display: inline-block;
+        color: white;
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+        &:hover {
+          background: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
