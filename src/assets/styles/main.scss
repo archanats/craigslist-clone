@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import 'reset';
 @import 'home';
+@import 'listings';
+@import 'details';
 
 body {
   font-family: 'Roboto', sans-serif;
-  // background: purple;
   background: linear-gradient(
       135deg,
       rgba(73, 155, 234, 0.7) 0%,

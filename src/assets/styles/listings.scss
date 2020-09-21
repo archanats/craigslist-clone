@@ -1,0 +1,133 @@
+.listings-page {
+  background: white;
+
+  #filter {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 50px 0;
+  }
+
+  .form-group {
+    display: flex;
+    flex-flow: column nowrap;
+
+    label {
+      font-weight: 500;
+      margin-bottom: 0.8rem;
+      font-size: 0.8rem;
+      text-transform: capitalize;
+    }
+
+    select {
+      background: white;
+      border-radius: 5px;
+      padding: 7px;
+      font-size: 1rem;
+      min-width: 100px;
+      border: 2px solid #adbed2;
+      color: #1b1b1b;
+      margin-right: 20px;
+    }
+
+    &.button {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+
+    .primary-btn {
+      background: #2a7ddd;
+      color: white;
+    }
+
+    .reset-btn {
+      background: #f7f8fa;
+      &:hover {
+        background: #f7f8fa;
+      }
+    }
+    .primary-btn,
+    .reset-btn {
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  }
+
+  #list-view {
+    background: #f7f8fa;
+    padding: 20px 0;
+
+    .change-view {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .white-box {
+      background: white;
+      padding: 20px;
+    }
+
+    .all-items {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px 20px;
+
+      .item {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.37);
+        border-radius: 5px;
+        overflow: hidden;
+
+        .image {
+          background: url('https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+          height: 250px;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          position: relative;
+          padding: 10px;
+
+          .price {
+            background: white;
+            position: absolute;
+            padding: 5px 10px;
+            color: green;
+            border-radius: 3px;
+          }
+        }
+
+        .details {
+          padding: 10px;
+          position: relative;
+
+          .fa-star {
+            position: absolute;
+            right: 10px;
+            font-size: 1.4rem;
+            top: 20px;
+
+            &:hover {
+              color: gold;
+              cursor: pointer;
+            }
+          }
+
+          h5 {
+            font-size: 0.9rem;
+            color: #27292d;
+            line-height: 1.5;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+          }
+
+          h6 {
+            font-size: 0.7rem;
+            color: #565d68;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
