@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Gallery from './Gallery';
 
 export default class Details extends Component {
   render() {
@@ -24,65 +25,7 @@ export default class Details extends Component {
             </section>
             <section className="content">
               <div className="media-column">
-                <div className="gallery">
-                  <div className="slider">
-                    <div className="main-image">
-                      <div className="arrow left-arrow">{'<'}</div>
-                      <div className="arrow right-arrow">{'>'}</div>
-                      <div
-                        className="image-1"
-                        style={{
-                          backgroundImage:
-                            'url("https://images.unsplash.com/photo-1510903117032-f1596c327647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80")',
-                        }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="thumbnails">
-                    <div
-                      className="thumb-img"
-                      style={{
-                        backgroundImage:
-                          'url("https://images.unsplash.com/photo-1510903117032-f1596c327647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80")',
-                      }}
-                    ></div>
-                    <div
-                      className="thumb-img"
-                      style={{
-                        backgroundImage:
-                          'url("https://images.unsplash.com/photo-1510903117032-f1596c327647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80")',
-                      }}
-                    ></div>
-                    <div
-                      className="thumb-img"
-                      style={{
-                        backgroundImage:
-                          'url("https://images.unsplash.com/photo-1510903117032-f1596c327647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80")',
-                      }}
-                    ></div>
-                    <div
-                      className="thumb-img"
-                      style={{
-                        backgroundImage:
-                          'url("https://images.unsplash.com/photo-1510903117032-f1596c327647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80")',
-                      }}
-                    ></div>
-                    <div
-                      className="thumb-img"
-                      style={{
-                        backgroundImage:
-                          'url("https://images.unsplash.com/photo-1510903117032-f1596c327647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80")',
-                      }}
-                    ></div>
-                    <div
-                      className="thumb-img"
-                      style={{
-                        backgroundImage:
-                          'url("https://images.unsplash.com/photo-1510903117032-f1596c327647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80")',
-                      }}
-                    ></div>
-                  </div>
-                </div>
+                <Gallery />
               </div>
               <div className="details-column">
                 <div className="date">Posted Sept 10th</div>
