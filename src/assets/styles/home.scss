@@ -11,7 +11,7 @@
   .links {
     background: rgba(0, 0, 0, 0.5);
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-gap: 20px;
     padding: 20px;
     margin-bottom: 70px;
@@ -27,8 +27,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+        &.single-col {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
         .link {
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           font-weight: 300;
           margin-bottom: 0.5rem;
           color: white;

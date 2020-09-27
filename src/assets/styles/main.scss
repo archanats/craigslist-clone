@@ -43,11 +43,41 @@ header {
       display: flex;
     }
 
-    .city {
+    .city-dropdown {
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 15px 20px;
+      position: relative;
+      cursor: pointer;
+
+      .scroll-area {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        top: 30px;
+        min-width: 150px;
+        left: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+
+        &.active {
+          visibility: visible;
+          opacity: 1;
+          top: 50px;
+        }
+        ul {
+          li {
+            padding: 15px;
+
+            &:hover {
+              background: rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
+      }
     }
   }
 
