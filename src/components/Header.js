@@ -20,7 +20,7 @@ export default class Header extends Component {
         selectedCity: city,
       },
       () => {
-        const { match, history } = this.props;
+        const { history } = this.props;
         let city = cities.filter(
           (city) => city.title === this.state.selectedCity
         )[0];
@@ -44,7 +44,7 @@ export default class Header extends Component {
   };
 
   componentDidMount() {
-    const { match, history } = this.props;
+    const { match } = this.props;
     let city = cities.filter((city) => city.slug === match.params.city)[0];
 
     this.setState({

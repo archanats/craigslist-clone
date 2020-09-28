@@ -21,7 +21,8 @@ export default class Listings extends Component {
   };
 
   render() {
-    const { match, location, history } = this.props;
+    // const { match, location, history } = this.props;
+
     return (
       <div className="listings-page">
         <div className="container">

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import categories from '../../data/category';
-import cities from '../../data/category';
 
 export default class Home extends Component {
   categories = () => {
@@ -14,7 +13,7 @@ export default class Home extends Component {
 
     return categories.map((item, i) => (
       <div key={i} className="categories">
-        <div className="title">{item.title}</div>
+        <a href={`/${this.props.match.params.city}/${item.title}`} className="title">{item.title}</a>
         <div className={`link-group single-col`}>{links(item)}</div>
       </div>
     ));
