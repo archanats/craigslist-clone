@@ -1,4 +1,7 @@
 .home {
+  // display: grid;
+  // grid-template-columns: auto;
+  // grid-template-rows: auto;
   h1 {
     font-size: 4rem;
     text-align: center;
@@ -11,7 +14,7 @@
   .links {
     background: rgba(0, 0, 0, 0.5);
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 20px;
     padding: 20px;
     margin-bottom: 70px;
