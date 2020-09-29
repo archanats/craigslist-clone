@@ -2,7 +2,6 @@ module.exports = [
   {
     title: 'New York City',
     slug: 'nyc',
-    image: ''
   },
   {
     title: 'Boston',

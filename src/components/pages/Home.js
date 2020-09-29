@@ -30,10 +30,20 @@ export default class Home extends Component {
   };
 
   trendingTags = () => {
-    const arr = [1, 2, 3, 4, 5, 6, 7, 7, 8];
+    const arr = [
+      'Cars',
+      'Apple Macbook',
+      'Piano Lessons',
+      'Movers & Packers',
+      'For Sale',
+      'For Rent',
+      'Meal Service',
+      'Ballet Classes',
+      'Yoga',
+    ];
     return arr.map((item, i) => (
       <div key={i} className="tag">
-        Apple Macbook
+        {item}
       </div>
     ));
   };
