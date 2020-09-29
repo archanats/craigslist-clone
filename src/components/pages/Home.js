@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import categories from '../../data/category';
 
@@ -6,14 +7,23 @@ export default class Home extends Component {
   categories = () => {
     const links = (item) =>
       item.listings.map((link, idx) => (
-        <a key={idx} href={`${item.title}/${link.slug}`} className="link">
+        <Link
+          key={idx}
+          to={`/${this.props.match.params.city}/${item.title}/${link.slug}`}
+          className="link"
+        >
           {link.name}
-        </a>
+        </Link>
       ));
 
     return categories.map((item, i) => (
       <div key={i} className="categories">
-        <a href={`/${this.props.match.params.city}/${item.title}`} className="title">{item.title}</a>
+        <Link
+          to={`/${this.props.match.params.city}/${item.title}`}
+          className="title"
+        >
+          {item.title}
+        </Link>
         <div className={`link-group single-col`}>{links(item)}</div>
       </div>
     ));

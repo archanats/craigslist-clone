@@ -40,7 +40,15 @@ header {
       font-size: 2rem;
       justify-content: center;
       align-items: center;
+      text-decoration: none;
       display: flex;
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
     }
 
     .city-dropdown {
@@ -95,6 +103,7 @@ header {
       justify-content: center;
       align-items: center;
       padding: 15px 20px;
+      text-transform: capitalize;
     }
 
     .post-btn {

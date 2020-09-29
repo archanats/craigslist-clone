@@ -4,7 +4,7 @@ module.exports = [
     listing: 'cars-and-trucks',
     city: 'nyc',
     locality: 'Jackson Heights',
-    category: 'for-sale',
+    category: 'for sale',
     price: '$46,000',
     extraDetails: {
       vin: '34678DF46ZCVD',
@@ -29,7 +29,7 @@ module.exports = [
     listing: 'cars-and-trucks',
     city: 'nyc',
     locality: 'Ridgewood',
-    category: 'for-sale',
+    category: 'for sale',
     price: '$5,000',
     extraDetails: {
       vin: '34678DF46ZCVD',
@@ -54,7 +54,7 @@ module.exports = [
     listing: 'cars-and-trucks',
     city: 'nyc',
     locality: 'Brooklyn',
-    category: 'for-sale',
+    category: 'for sale',
     price: '$25,000',
     extraDetails: {
       vin: '34678DF46ZCVD',
@@ -79,7 +79,7 @@ module.exports = [
     listing: 'cars-and-trucks',
     city: 'boston',
     locality: 'Brooklyn',
-    category: 'for-sale',
+    category: 'for sale',
     price: '$25,000',
     extraDetails: {
       vin: '34678DF46ZCVD',
@@ -104,14 +104,14 @@ module.exports = [
     listing: 'cars-and-trucks',
     city: 'austin',
     locality: 'Jackson Heights',
-    category: 'for-sale',
+    category: 'for sale',
     price: '$46,000',
     extraDetails: {
       vin: '34678DF46ZCVD',
       miles: 23058,
       transmission: 'automatic',
       make: 'BMW',
-      model: 'x6',
+      model: 'm6',
     },
     description:
       'Veniam dolore reprehenderit sint ullamco nisi amet elit nisi esse officia minim proident cupidatat. Aliquip laborum do cupidatat ad cupidatat est anim veniam id reprehenderit mollit eu sint. Quis ex sint pariatur officia duis enim cupidatat. Nostrud magna commodo reprehenderit anim aliqua dolore amet cupidatat. Excepteur irure dolor fugiat proident tempor amet culpa.',

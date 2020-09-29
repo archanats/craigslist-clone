@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import cities from '../data/cities';
 
@@ -53,10 +54,14 @@ export default class Header extends Component {
   }
 
   render() {
+    const { match } = this.props;
+
     return (
       <header>
         <div className={'left-menu'}>
-          <div className={'logo'}> Craigslist</div>
+          <Link to={`/${match.params.city}`} className={'logo'}>
+            Craigslist
+          </Link>
           <div className={'city-dropdown'} onClick={this.clickDropdownCity}>
             {this.state.selectedCity}
             <span
@@ -74,7 +79,9 @@ export default class Header extends Component {
           </div>
         </div>
         <div className={'right-menu'}>
-          <div className={'user-image'}> img</div>
+          <div className={'user-image'}>
+            <span className="far fa-user" />
+          </div>
           <div className={'account-dropdown'}>
             my account <span className={'fas fa-chevron-down'} />
           </div>
