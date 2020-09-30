@@ -32,8 +32,8 @@ export default class Home extends Component {
   trendingTags = () => {
     const arr = [
       'Cars',
-      'Apple Macbook',
-      'Piano Lessons',
+      'Computers',
+      'Events',
       'Movers & Packers',
       'For Sale',
       'For Rent',
