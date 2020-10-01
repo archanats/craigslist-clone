@@ -80,12 +80,6 @@ export default class Header extends Component {
           </div>
         </div>
         <div className={'right-menu'}>
-          {/* <div className={'user-image'}>
-            <span className="far fa-user" />
-          </div> */}
-          {/* <div className={'account-dropdown'}>
-            my account <span className={'fas fa-chevron-down'} />
-          </div> */}
           <div className={'post-btn'}>Login</div>
         </div>
       </header>
